@@ -81,7 +81,7 @@ var monster = {
       // Cookie orig_ref is for ominiture tracking across redirects
       // So the referrer does not get lost when redirecting to mobile from desktop
       monster.set('orig_ref', document.referrer, 1);
-      destination = l.protocol + "//" + l.host + "/m" + l.pathname;
+      destination = l.protocol + "//" + l.host + "" + l.pathname;
 
       if (l.search) {
         destination += l.search;
