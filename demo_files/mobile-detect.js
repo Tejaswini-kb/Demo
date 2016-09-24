@@ -77,7 +77,7 @@ var monster = {
     var l = document.location;
     var destination;
 
-    if (!(/^\/m\//.test(l.pathname))) {
+   /** if (!(/^\/m\//.test(l.pathname))) {
       // Cookie orig_ref is for ominiture tracking across redirects
       // So the referrer does not get lost when redirecting to mobile from desktop
       monster.set('orig_ref', document.referrer, 1);
@@ -95,7 +95,7 @@ var monster = {
         document.location.replace(destination);
       }.bind(this, destination), 0);
     }
-  };
+  };**/
 
   // Bail (and possibly redirect) if the cookie is already set to a proper value.
   if (cookieValue == "phone") {
